@@ -1,2 +1,16 @@
 # GoogleSheetToMindmeister
-A function to create a txt file that can be imported to Mindmeister
+A function for formatting data to be imported into mindmeister.com
+
+# Input: [[child, parent],...]
+
+```
+[['A', ''],//root
+['B', 'A'],
+['C', 'B'],
+['D', 'C'],
+['E', 'D'],
+['F', 'A']];
+```
+
+# Output:indent accepted by mindmeister.com)
+`[ [ 'A' ],[ ' B' ], [ '  C' ], [ '   D' ], [ '    E' ], [ ' F' ] ]`
