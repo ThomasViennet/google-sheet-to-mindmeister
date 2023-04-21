@@ -12,5 +12,5 @@ A function for formatting data to be imported into mindmeister.com
 ['F', 'A']];
 ```
 
-# Output:indent accepted by mindmeister.com)
+# Output: indent accepted by mindmeister.com
 `[ [ 'A' ],[ ' B' ], [ '  C' ], [ '   D' ], [ '    E' ], [ ' F' ] ]`
