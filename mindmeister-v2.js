@@ -2,10 +2,19 @@
 * Input : [['child', 'parent'], ...];
 * Reponse : [['parent'],[' child']]
 */
+function onOpen(e) {
+    SpreadsheetApp.getUi()
+        .createMenu('SEO')
+        .addItem('Exporter pour mindmeister', 'mindmeister')
+        .addToUi();
+}
 
 function mindmeister() {
     const sheet = SpreadsheetApp.getActiveSpreadsheet();
     const input = sheet.getSelection().getActiveRange().getValues();
+    if (!sheet.getSheetByName("Mindmeister - Export")) {
+        sheet.insertSheet('Mindmeister - Export');
+    }
     const output = sheet.getSheetByName("Mindmeister - Export");
     output.clear();
 
