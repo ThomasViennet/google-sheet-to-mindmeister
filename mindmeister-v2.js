@@ -1,7 +1,8 @@
 /*
-* Input : [['child', 'parent'], ...];
-* Reponse : [['parent'],[' child']]
+* Input : [['child', 'parent'], ...]
+* Reponse : [['parent'],[' child'], ...]
 */
+
 function onOpen(e) {
     SpreadsheetApp.getUi()
         .createMenu('SEO')
@@ -35,7 +36,7 @@ function mindmeister() {
     }
 
     // Find children of each parent
-    for (let parent = 0; parent < response.length; parent++) {// 
+    for (let parent = 0; parent < response.length; parent++) {
 
         let rangParent = parent;
 
